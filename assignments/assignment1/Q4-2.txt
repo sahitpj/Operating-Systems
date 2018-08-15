@@ -1,0 +1,22 @@
+Equation is of the form 
+
+avg of all response times would be 
+
+RT = (0 + (n+t) + (2n+2t))/3
+ 
+Some of all turnaround times would be 
+
+TT = ((3n+3t+10-n) + (3n+3t+(10-n)+t+(20-n)) + (3n+3t+(10-n)+t+(20-n) + t + (30-n)))/3
+
+
+How are we scheduling the processes?
+
+we first run a small part of all programs so that the RT is minimized. We then run the rest of the parts without 
+running in the Round Robin Fashion, thus minimizing the TT
+
+If we change the first job to come after 10sec then, 
+
+
+Then we follow the above instruction for the first two processes. As soon as the third process arives
+we give it the CPU, thus minimizing RT, however only for a time period of n after which we finish the other 2 processes
+and then come back to the third. 
