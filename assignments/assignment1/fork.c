@@ -10,14 +10,14 @@ void delay(unsigned int mseconds)
 
 int main(){
     int i;
-    for (i = 0; i >= 0; i++){
+    for (i = 0; i < 100; i++){
         delay(1000000);
         int rc = fork();
         if (rc < 0){
             printf("No child process was created \n");
         }
         if (rc == 0){
-            printf("Child process was created with pid %d \n", getpid());
+            printf("Child process was created with pid %d and loop counter is %d \n", getpid(), i+1);
             break;
         }
         if (rc > 0){
