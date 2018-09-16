@@ -1,1 +1,9 @@
+#system files
 .DS_Store
+
+#pyc files
+
+*.pyc
+
+# notebook checkpoints
+.ipynb_checkpoints

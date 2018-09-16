@@ -107,4 +107,3 @@ def optimal(cache_sequence, cache_size):
     return hits, misses, miss_hit_table
 
 
-                
